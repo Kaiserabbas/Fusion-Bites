@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": ["airbnb-base"],
+  "rules": {
+    "no-restricted-globals": ["error", "event", "fdescribe", "fit"], 
+    "no-use-before-define": "off",
+    "prefer-destructuring": ["error", {"object": true, "array": false}],
+    "func-names": ["error", "never", { "generators": "always" }],
+     "prefer-arrow-callback": "off",
+    "arrow-parens": "off",
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "no-shadow": "off",
+    "no-plusplus": "off", 
+    "no-param-reassign": "off",
+    "object-curly-newline": "off",
+    "eol-last": "off",
+     "radix": "off",
+    "no-unused-expressions": "off",
+    "no-const-assign": "off",
+    "arrow-body-style": "off",
+    "consistent-return": "off",
+     "comma-dangle": ["off", "always-multiline"],
+    "import/extensions": [ 1, {
+      "js": "always", "json": "always"
+    }],
+    "object-shorthand": "off",
+    "no-alert": "off",
+    "prefer-destructuring": "off",
+    "operator-linebreak": "off"
+  },
+  "ignorePatterns": [
+    "dist/",
+    "build/"
+  ]
+}
