@@ -8,9 +8,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name][contenthash].js',
+    filename: '[name].js',
     clean: true,
-    assetModuleFilename: 'assets/[name][ext]',
   },
   devtool: 'source-map',
   devServer: {
@@ -20,7 +19,6 @@ module.exports = {
     port: 3000,
     open: true,
     hot: true,
-    compress: true,
     historyApiFallback: true,
   },
   module: {
@@ -37,7 +35,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Weather App',
+      title: 'Fusion-Bites',
       template: path.resolve(__dirname, 'src', 'index.html'),
       filename: 'index.html',
     }),
