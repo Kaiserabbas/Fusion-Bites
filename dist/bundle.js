@@ -21,7 +21,100 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+/* -------logo over text starts here --- */
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:whitesmoke;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: chocolate;
+  font-size: 1.7rem;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* -------logo over text ends here --- */
+
+#logo {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#nav-list {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  color: rgb(122, 122, 122);
+}
+
+footer {
+  padding: 20px 0 20px 0;
+  position: absolute;
+  width: 100vw;
+  top: 90vh;
+  color: #000;
+  background-color: whitesmoke;
+}
+
+footer small {
+  margin: 20px ;
+  padding: 10px;
+}
+
+
+
+`, "",{"version":3,"sources":["webpack://./src/modules/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;EAClC,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,4BAA4B;AAC9B;;AAEA,0CAA0C;;AAE1C;EACE,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,cAAc;EACd,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,OAAO;EACP,QAAQ;EACR,YAAY;EACZ,WAAW;EACX,UAAU;EACV,oBAAoB;EACpB,2BAA2B;AAC7B;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;EAClB,QAAQ;EACR,WAAW;EACX,oCAAoC;EACpC,gCAAgC;EAChC,eAAe;AACjB;;AAEA,wCAAwC;;AAExC;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,sBAAsB;EACtB,kBAAkB;EAClB,YAAY;EACZ,SAAS;EACT,WAAW;EACX,4BAA4B;AAC9B;;AAEA;EACE,aAAa;EACb,aAAa;AACf","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', sans-serif;\n  text-decoration: none;\n  list-style: none;\n}\n\nheader {\n  display: flex;\n  justify-content: space-between;\n  background-color: whitesmoke;\n}\n\n/* -------logo over text starts here --- */\n\n.container {\n  position: relative;\n  width: 50%;\n}\n\n.image {\n  display: block;\n  width: 200px;\n  height: auto;\n}\n\n.overlay {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  height: 100%;\n  width: 100%;\n  opacity: 0;\n  transition: .5s ease;\n  background-color:whitesmoke;\n}\n\n.container:hover .overlay {\n  opacity: 1;\n}\n\n.text {\n  color: chocolate;\n  font-size: 1.7rem;\n  font-weight: 900;\n  position: absolute;\n  top: 50%;\n  left: 100px;\n  -ms-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  cursor: pointer;\n}\n\n/* -------logo over text ends here --- */\n\n#logo {\n  margin: 20px;\n  display: flex;\n  align-items: center;\n  gap: 20px;\n}\n\n#nav-list {\n  margin: 20px;\n  display: flex;\n  align-items: center;\n  gap: 20px;\n}\n\n.nav a {\n  color: rgb(122, 122, 122);\n}\n\nfooter {\n  padding: 20px 0 20px 0;\n  position: absolute;\n  width: 100vw;\n  top: 90vh;\n  color: #000;\n  background-color: whitesmoke;\n}\n\nfooter small {\n  margin: 20px ;\n  padding: 10px;\n}\n\n\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -466,6 +559,16 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/modules/assets/logo.png":
+/*!*************************************!*\
+  !*** ./src/modules/assets/logo.png ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "a41b152d443f529b3694.png";
+
 /***/ })
 
 /******/ 	});
@@ -519,6 +622,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -535,6 +650,29 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -549,10 +687,15 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/index.css */ "./src/modules/index.css");
+/* harmony import */ var _modules_assets_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/assets/logo.png */ "./src/modules/assets/logo.png");
 
+
+
+const image = document.querySelectorAll('.image');
+image.src = _modules_assets_logo_png__WEBPACK_IMPORTED_MODULE_1__;
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle8380f61c54016b970ad7.js.map
+//# sourceMappingURL=bundle.js.map
