@@ -77,7 +77,6 @@ header {
 
 footer {
   padding: 0 20px;
-  position: absolute;
   width: 100vw;
   top: 90vh;
   color: #000;
@@ -96,3 +95,27 @@ footer small {
   width: 400px;
   height: auto;
 }
+
+/* appened list items start here  */
+#item-list {
+  margin: 50px 0 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;  
+}
+
+.item {
+  display: flex;
+}
+
+#item-id {
+  text-align: center;
+}
+
+#item-image {
+  width: 300px;
+  border-radius: 20px;
+box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #fff;}
+
+/* appened list items end here  */
