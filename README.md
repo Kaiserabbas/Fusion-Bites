@@ -32,6 +32,9 @@ We source only the freshest and finest ingredients to ensure an exceptional dini
 Our contemporary space provides the perfect backdrop for a memorable gathering with friends and family.
 <h3>👩‍🍳Attentive Service: </h3>
 Our team is dedicated to providing attentive and friendly service to enhance your visit.
+
+[Back to Top ⬆️](#top)
+
 <h2 id="installation"> 🛠️ Installation</h2>
 To run Fusion Bites Restaurant locally, follow these steps:
 <br>
