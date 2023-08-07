@@ -43,7 +43,7 @@ header {
   width: 50%;
 }
 
-.image {
+.image-header {
   display: block;
   width: 200px;
   height: auto;
@@ -58,8 +58,8 @@ header {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color:whitesmoke;
+  transition: 0.5s ease;
+  background-color: whitesmoke;
 }
 
 .container:hover .overlay {
@@ -99,22 +99,27 @@ header {
 }
 
 footer {
-  padding: 20px 0 20px 0;
+  padding: 0 20px;
   position: absolute;
   width: 100vw;
   top: 90vh;
   color: #000;
   background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer small {
-  margin: 20px ;
-  padding: 10px;
+  padding: 20px;
 }
 
-
-
-`, "",{"version":3,"sources":["webpack://./src/modules/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;EAClC,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,4BAA4B;AAC9B;;AAEA,0CAA0C;;AAE1C;EACE,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,cAAc;EACd,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,OAAO;EACP,QAAQ;EACR,YAAY;EACZ,WAAW;EACX,UAAU;EACV,oBAAoB;EACpB,2BAA2B;AAC7B;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;EAClB,QAAQ;EACR,WAAW;EACX,oCAAoC;EACpC,gCAAgC;EAChC,eAAe;AACjB;;AAEA,wCAAwC;;AAExC;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,sBAAsB;EACtB,kBAAkB;EAClB,YAAY;EACZ,SAAS;EACT,WAAW;EACX,4BAA4B;AAC9B;;AAEA;EACE,aAAa;EACb,aAAa;AACf","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', sans-serif;\n  text-decoration: none;\n  list-style: none;\n}\n\nheader {\n  display: flex;\n  justify-content: space-between;\n  background-color: whitesmoke;\n}\n\n/* -------logo over text starts here --- */\n\n.container {\n  position: relative;\n  width: 50%;\n}\n\n.image {\n  display: block;\n  width: 200px;\n  height: auto;\n}\n\n.overlay {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  height: 100%;\n  width: 100%;\n  opacity: 0;\n  transition: .5s ease;\n  background-color:whitesmoke;\n}\n\n.container:hover .overlay {\n  opacity: 1;\n}\n\n.text {\n  color: chocolate;\n  font-size: 1.7rem;\n  font-weight: 900;\n  position: absolute;\n  top: 50%;\n  left: 100px;\n  -ms-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  cursor: pointer;\n}\n\n/* -------logo over text ends here --- */\n\n#logo {\n  margin: 20px;\n  display: flex;\n  align-items: center;\n  gap: 20px;\n}\n\n#nav-list {\n  margin: 20px;\n  display: flex;\n  align-items: center;\n  gap: 20px;\n}\n\n.nav a {\n  color: rgb(122, 122, 122);\n}\n\nfooter {\n  padding: 20px 0 20px 0;\n  position: absolute;\n  width: 100vw;\n  top: 90vh;\n  color: #000;\n  background-color: whitesmoke;\n}\n\nfooter small {\n  margin: 20px ;\n  padding: 10px;\n}\n\n\n\n"],"sourceRoot":""}]);
+.image-footer {
+  padding: 10px;
+  display: block;
+  width: 400px;
+  height: auto;
+}
+`, "",{"version":3,"sources":["webpack://./src/modules/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;EAClC,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,4BAA4B;AAC9B;;AAEA,0CAA0C;;AAE1C;EACE,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,cAAc;EACd,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,OAAO;EACP,QAAQ;EACR,YAAY;EACZ,WAAW;EACX,UAAU;EACV,qBAAqB;EACrB,4BAA4B;AAC9B;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;EAClB,QAAQ;EACR,WAAW;EACX,oCAAoC;EACpC,gCAAgC;EAChC,eAAe;AACjB;;AAEA,wCAAwC;;AAExC;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,eAAe;EACf,kBAAkB;EAClB,YAAY;EACZ,SAAS;EACT,WAAW;EACX,4BAA4B;EAC5B,aAAa;EACb,8BAA8B;AAChC;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,YAAY;AACd","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', sans-serif;\n  text-decoration: none;\n  list-style: none;\n}\n\nheader {\n  display: flex;\n  justify-content: space-between;\n  background-color: whitesmoke;\n}\n\n/* -------logo over text starts here --- */\n\n.container {\n  position: relative;\n  width: 50%;\n}\n\n.image-header {\n  display: block;\n  width: 200px;\n  height: auto;\n}\n\n.overlay {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  height: 100%;\n  width: 100%;\n  opacity: 0;\n  transition: 0.5s ease;\n  background-color: whitesmoke;\n}\n\n.container:hover .overlay {\n  opacity: 1;\n}\n\n.text {\n  color: chocolate;\n  font-size: 1.7rem;\n  font-weight: 900;\n  position: absolute;\n  top: 50%;\n  left: 100px;\n  -ms-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  cursor: pointer;\n}\n\n/* -------logo over text ends here --- */\n\n#logo {\n  margin: 20px;\n  display: flex;\n  align-items: center;\n  gap: 20px;\n}\n\n#nav-list {\n  margin: 20px;\n  display: flex;\n  align-items: center;\n  gap: 20px;\n}\n\n.nav a {\n  color: rgb(122, 122, 122);\n}\n\nfooter {\n  padding: 0 20px;\n  position: absolute;\n  width: 100vw;\n  top: 90vh;\n  color: #000;\n  background-color: whitesmoke;\n  display: flex;\n  justify-content: space-between;\n}\n\nfooter small {\n  padding: 20px;\n}\n\n.image-footer {\n  padding: 10px;\n  display: block;\n  width: 400px;\n  height: auto;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -561,10 +566,102 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/modules/assets/logo.png":
-/*!*************************************!*\
-  !*** ./src/modules/assets/logo.png ***!
-  \*************************************/
+/***/ "./src/modules/api.js":
+/*!****************************!*\
+  !*** ./src/modules/api.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const FOOD_BASE_URL = 'https://themealdb.com/api/json/v1/1/filter.php?a=Indian';
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FOOD_BASE_URL);
+
+
+/***/ }),
+
+/***/ "./src/modules/getItems.js":
+/*!*********************************!*\
+  !*** ./src/modules/getItems.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api */ "./src/modules/api.js");
+
+const getFoodItems = async () => {
+  const response = await fetch(`${_api__WEBPACK_IMPORTED_MODULE_0__["default"]}`);
+  const data = await response.json();
+  return data;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getFoodItems);
+
+
+/***/ }),
+
+/***/ "./src/modules/logo.js":
+/*!*****************************!*\
+  !*** ./src/modules/logo.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/logo.png */ "./src/assets/logo.png");
+
+
+const logo = () => {
+  const imageHeader = document.querySelector('.image-header');
+  imageHeader.src = _assets_logo_png__WEBPACK_IMPORTED_MODULE_0__;
+
+  const imageFooter = document.querySelector('.image-footer');
+  imageFooter.src = _assets_logo_png__WEBPACK_IMPORTED_MODULE_0__;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (logo);
+
+
+/***/ }),
+
+/***/ "./src/modules/renderLists.js":
+/*!************************************!*\
+  !*** ./src/modules/renderLists.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Render the item list on the home page
+const renderItemList = (items) => {
+  const itemListElement = document.getElementById('item-list');
+
+  items.forEach((item) => {
+    const itemElement = document.createElement('div');
+    itemElement.dataset.itemId = item.idMeal;
+    itemElement.textContent = item.strMeal;
+    itemListElement.appendChild(itemElement);
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderItemList);
+
+
+/***/ }),
+
+/***/ "./src/assets/logo.png":
+/*!*****************************!*\
+  !*** ./src/assets/logo.png ***!
+  \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "a41b152d443f529b3694.png";
@@ -687,12 +784,23 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/index.css */ "./src/modules/index.css");
-/* harmony import */ var _modules_assets_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/assets/logo.png */ "./src/modules/assets/logo.png");
+/* harmony import */ var _modules_logo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/logo.js */ "./src/modules/logo.js");
+/* harmony import */ var _modules_getItems__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/getItems */ "./src/modules/getItems.js");
+/* harmony import */ var _modules_renderLists__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/renderLists */ "./src/modules/renderLists.js");
 
 
 
-const image = document.querySelectorAll('.image');
-image.src = _modules_assets_logo_png__WEBPACK_IMPORTED_MODULE_1__;
+
+
+(0,_modules_logo_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
+// Fetch data from the API and display the item list
+(0,_modules_getItems__WEBPACK_IMPORTED_MODULE_2__["default"])()
+  .then((data) => {
+    (0,_modules_renderLists__WEBPACK_IMPORTED_MODULE_3__["default"])(data);
+  })
+  .catch((error) => {
+    console.error('Error fetching data:', error);
+  });
 
 })();
 
