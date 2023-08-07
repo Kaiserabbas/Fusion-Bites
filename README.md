@@ -61,6 +61,7 @@ We welcome contributions from the open-source community! If you find any issues 
 
 <h2 id="author">👥 Author </h2>
 👤 Qaisar Abbas<br>
+👤 Misikir Abate Teka <br>
 - Front-end developer with 3+ years of experience building user-friendly and interactive web applications. Proven ability to work independently and as part of a team to deliver high-quality products.
 
 [Back to Top ⬆️](#top)
@@ -70,7 +71,7 @@ Contact 📞
 If you have any inquiries, suggestions, or feedback, please feel free to contact us. You can reach out to us via:
 
 - [Email](kayser.abbas@gmail.com) <br>
-- Phone: +92 314 0071447 <br>
+- [Phone:](+923140071447) <br>
   Social Media: Follow us on Twitter, Facebook, and Instagram for updates and special offers.
 - [Github](https://github.com/Kaiserabbas)
 - [LinkedIn](https://www.linkedin.com/in/qaisar-abbas-21a93840/)
