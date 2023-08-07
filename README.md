@@ -62,7 +62,7 @@ We welcome contributions from the open-source community! If you find any issues 
 <h2 id="author">👥 Author </h2>
 👤 Qaisar Abbas<br>
 👤 Misikir Abate Teka <br>
-- Front-end developer with 3+ years of experience building user-friendly and interactive web applications. Proven ability to work independently and as part of a team to deliver high-quality products.
+Full stack developers with 3+ years of experience building user-friendly and interactive web applications. Proven ability to work independently and as part of a team to deliver high-quality products.
 
 [Back to Top ⬆️](#top)
 
