@@ -93,7 +93,6 @@ footer {
   display: block;
   width: 150px;
   height: auto;
-  background-color: none;
 }
 
 /* appened list items start here  */
@@ -102,7 +101,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;  
+  gap: 30px;
 }
 
 .item {
@@ -116,6 +115,7 @@ footer {
 #item-image {
   width: 300px;
   border-radius: 20px;
-  box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #fff;}
+  box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #fff;
+}
 
 /* appened list items end here  */

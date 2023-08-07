@@ -1,4 +1,4 @@
-import getFoodItems from './getItems';
+import getFoodItems from './getItems.js';
 
 // Fetch data from the API and display the item list
 getFoodItems()
