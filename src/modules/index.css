@@ -11,6 +11,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: whitesmoke;
+  gap: 20px;
 }
 
 /* -------logo over text starts here --- */
@@ -21,6 +22,8 @@ header {
 }
 
 .image-header {
+  border-radius: 15px;
+  margin: 0 0 0 10px;
   display: block;
   width: 200px;
   height: auto;
@@ -44,6 +47,7 @@ header {
 }
 
 .text {
+  text-shadow: 3px 1px #dadada;
   color: chocolate;
   font-size: 1.7rem;
   font-weight: 900;
@@ -58,7 +62,6 @@ header {
 /* -------logo over text ends here --- */
 
 #logo {
-  margin: 20px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -73,27 +76,24 @@ header {
 
 .nav a {
   color: rgb(122, 122, 122);
+  font-size: 0.8rem;
 }
 
 footer {
   padding: 0 20px;
   width: 100vw;
-  top: 90vh;
   color: #000;
   background-color: whitesmoke;
   display: flex;
-  justify-content: space-between;
-}
-
-footer small {
-  padding: 20px;
+  align-items: center;
 }
 
 .image-footer {
   padding: 10px;
   display: block;
-  width: 400px;
+  width: 150px;
   height: auto;
+  background-color: none;
 }
 
 /* appened list items start here  */
@@ -116,6 +116,6 @@ footer small {
 #item-image {
   width: 300px;
   border-radius: 20px;
-box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #fff;}
+  box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #fff;}
 
 /* appened list items end here  */
