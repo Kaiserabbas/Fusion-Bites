@@ -1,6 +1,6 @@
 import getFoodItems from './getItems.js';
 import { FOOD_BASE_URL } from './api.js';
-import { getLikes, saveLikes } from './likesFunctions.js';
+import { updateLikes, saveLikes } from './likesFunctions.js';
 
 // Fetch data from the API and display the item list
 getFoodItems()
@@ -11,18 +11,7 @@ getFoodItems()
     console.error('Error fetching data:', error);
   });
 
-async function updateLikes(likeCountElement, id) {
-  const dataLikes = await getLikes();
-  const likeCount = dataLikes.find((obj) => obj.item_id === id);
-  if (likeCount) {
-    likeCountElement.textContent = `${likeCount.likes} likes`;
-  } else {
-    likeCountElement.textContent = `0 likes`;
-  }
-  likeCountElement.textContent = `${likeCount.likes} likes`;
-}
-
-async function renderItemList(items) {
+const renderItemList = async (items) => {
   const itemListElement = document.getElementById('item-list');
 
   items.forEach(async (item) => {
@@ -65,33 +54,20 @@ async function renderItemList(items) {
 
     updateLikes(likeCountElement, item.idMeal);
   });
-}
+};
 
-async function initializeItemList() {
-  try {
-    const response = await fetch(FOOD_BASE_URL);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch items with status: ${response.status}`);
-    }
-    const data = await response.json();
-    renderItemList(data.meals);
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  }
-}
+// const initializeItemList = async () => {
+//   try {
+//     const response = await fetch(FOOD_BASE_URL);
+//     if (!response.ok) {
+//       throw new Error(`Failed to fetch items with status: ${response.status}`);
+//     }
+//     const data = await response.json();
+//     renderItemList(data.meals);
+//   } catch (error) {
+//     console.error('Error fetching data:', error);
+//   }
+// };
 
-function likeFlash() {
-  let a;
-  a = document.querySelectorAll('.liked');
-  a.innerHTML = '&#xf006;';
-  setTimeout(function () {
-    a.innerHTML = '&#xf123;';
-  }, 1000);
-  setTimeout(function () {
-    a.innerHTML = '&#xf005;';
-  }, 2000);
-}
-likeFlash();
-setInterval(likeFlash, 3000);
-
-initializeItemList();
+// initializeItemList();
+export default renderItemList;

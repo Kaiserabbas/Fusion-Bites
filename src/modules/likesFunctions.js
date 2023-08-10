@@ -1,6 +1,6 @@
 import { apiUrl } from './api.js';
 
-async function getLikes() {
+const getLikes = async () => {
   try {
     const response = await fetch(`${apiUrl}/likes`, {
       method: 'GET',
@@ -19,9 +19,9 @@ async function getLikes() {
     console.error('Error fetching likes:', error);
     return [];
   }
-}
+};
 
-async function saveLikes(id) {
+const saveLikes = async (id) => {
   try {
     const response = await fetch(`${apiUrl}/likes`, {
       method: 'POST',
@@ -42,6 +42,17 @@ async function saveLikes(id) {
   } catch (error) {
     console.error('Error saving like:', error);
   }
-}
+};
 
-export { getLikes, saveLikes };
+const updateLikes = async (likeCountElement, id) => {
+  const dataLikes = await getLikes();
+  const likeCount = dataLikes.find((obj) => obj.item_id === id);
+  if (likeCount) {
+    likeCountElement.textContent = `${likeCount.likes} likes`;
+  } else {
+    likeCountElement.textContent = `0 likes`;
+  }
+  likeCountElement.textContent = `${likeCount.likes} likes`;
+};
+
+export { getLikes, saveLikes, updateLikes };
