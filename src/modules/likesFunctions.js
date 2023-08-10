@@ -50,7 +50,7 @@ const updateLikes = async (likeCountElement, id) => {
   if (likeCount) {
     likeCountElement.textContent = `${likeCount.likes} likes`;
   } else {
-    likeCountElement.textContent = `0 likes`;
+    likeCountElement.textContent = '0 likes';
   }
   likeCountElement.textContent = `${likeCount.likes} likes`;
 };
