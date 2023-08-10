@@ -56,18 +56,4 @@ const renderItemList = async (items) => {
   });
 };
 
-// const initializeItemList = async () => {
-//   try {
-//     const response = await fetch(FOOD_BASE_URL);
-//     if (!response.ok) {
-//       throw new Error(`Failed to fetch items with status: ${response.status}`);
-//     }
-//     const data = await response.json();
-//     renderItemList(data.meals);
-//   } catch (error) {
-//     console.error('Error fetching data:', error);
-//   }
-// };
-
-// initializeItemList();
 export default renderItemList;
