@@ -125,12 +125,26 @@ footer {
 .like-icon {
   font-size: 32px;
   cursor: pointer;
+
+  animation: heartBeat 1s infinite;
 }
 
 .liked {
   color: blue;
+  cursor: default;
+  animation: none;
 }
-
+  @keyframes heartBeat {
+  
+      0%,
+      100% {
+        transform: scale(1);
+      }
+  
+      50% {
+        transform: scale(1.4);
+      }
+    }
 button {
   padding: 10px 20px;
   border: none;
