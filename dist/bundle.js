@@ -630,8 +630,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   apiUrl: () => (/* binding */ apiUrl)
 /* harmony export */ });
 const FOOD_BASE_URL = 'https://themealdb.com/api/json/v1/1/filter.php?a=Indian';
-const appId = 'm0W3EfgcQ9pqpUaHd8PQ';
-const apiUrl = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appId}`;
+// const appId = 'm0W3EfgcQ9pqpUaHd8PQ';
+const apiUrl = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/m0W3EfgcQ9pqpUaHd8PQ`;
 
 
 
@@ -695,14 +695,14 @@ async function getLikes() {
   }
 }
 
-async function saveLikes(itemId) {
+async function saveLikes(id) {
   try {
     const response = await fetch(`${_api_js__WEBPACK_IMPORTED_MODULE_0__.apiUrl}/likes`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ item_id: itemId }),
+      body: JSON.stringify({ item_id: id }),
     });
 
     if (!response.ok) {
@@ -769,10 +769,15 @@ __webpack_require__.r(__webpack_exports__);
     console.error('Error fetching data:', error);
   });
 
-async function updateLikes(likeCountElement, itemId) {
-  const likesData = await (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__.getLikes)();
-  const likeCount = likesData.filter((like) => like.item_id === itemId).length;
-  likeCountElement.textContent = likeCount;
+async function updateLikes(likeCountElement, id) {
+  const dataLikes = await (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__.getLikes)();
+  const likeCount = dataLikes.find((obj) => obj.item_id === id);
+  if (likeCount) {
+    likeCountElement.textContent = `${likeCount.likes} likes`;
+  } else {
+    likeCountElement.textContent = `0 likes`;
+  }
+  likeCountElement.textContent = `${likeCount.likes} likes`;
 }
 
 async function renderItemList(items) {
