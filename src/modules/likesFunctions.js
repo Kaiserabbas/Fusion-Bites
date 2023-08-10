@@ -36,6 +36,9 @@ async function saveLikes(id) {
     }
 
     console.log('Like saved successfully');
+    const likedItems = JSON.parse(localStorage.getItem('likedItems')) || [];
+    likedItems.push(id);
+    localStorage.setItem('likedItems', JSON.stringify(likedItems));
   } catch (error) {
     console.error('Error saving like:', error);
   }
