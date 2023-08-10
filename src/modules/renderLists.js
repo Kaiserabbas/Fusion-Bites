@@ -36,6 +36,11 @@ async function renderItemList(items) {
 
     const likeButton = document.createElement('i');
     likeButton.className = 'like-icon fa-solid fa-thin fa-thumbs-up';
+    const likedItems = JSON.parse(localStorage.getItem('likedItems')) || [];
+    if (likedItems.includes(item.idMeal)) {
+      likeButton.classList.add('liked');
+      likeButton.disabled = true;
+    }
 
     const likeCountElement = document.createElement('div');
     likeCountElement.className = 'like-count';
@@ -74,5 +79,19 @@ async function initializeItemList() {
     console.error('Error fetching data:', error);
   }
 }
+
+function likeFlash() {
+  let a;
+  a = document.querySelectorAll('.liked');
+  a.innerHTML = '&#xf006;';
+  setTimeout(function () {
+    a.innerHTML = '&#xf123;';
+  }, 1000);
+  setTimeout(function () {
+    a.innerHTML = '&#xf005;';
+  }, 2000);
+}
+likeFlash();
+setInterval(likeFlash, 3000);
 
 initializeItemList();
