@@ -148,12 +148,26 @@ footer {
 .like-icon {
   font-size: 32px;
   cursor: pointer;
+
+  animation: heartBeat 1s infinite;
 }
 
 .liked {
   color: blue;
+  cursor: default;
+  animation: none;
 }
-
+  @keyframes heartBeat {
+  
+      0%,
+      100% {
+        transform: scale(1);
+      }
+  
+      50% {
+        transform: scale(1.4);
+      }
+    }
 button {
   padding: 10px 20px;
   border: none;
@@ -171,7 +185,7 @@ button:active {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
-`, "",{"version":3,"sources":["webpack://./src/modules/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;EAClC,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,4BAA4B;EAC5B,SAAS;AACX;;AAEA,0CAA0C;;AAE1C;EACE,mBAAmB;EACnB,kBAAkB;EAClB,cAAc;EACd,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,OAAO;EACP,QAAQ;EACR,YAAY;EACZ,WAAW;EACX,UAAU;EACV,qBAAqB;EACrB,4BAA4B;AAC9B;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,4BAA4B;EAC5B,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;EAClB,QAAQ;EACR,WAAW;EACX,oCAAoC;EACpC,gCAAgC;EAChC,eAAe;AACjB;;AAEA,wCAAwC;;AAExC;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;AACnB;;AAEA;EACE,eAAe;EACf,YAAY;EACZ,WAAW;EACX,4BAA4B;EAC5B,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,YAAY;AACd;;AAEA,mCAAmC;AACnC;EACE,qBAAqB;EACrB,aAAa;EACb,eAAe;EACf,uBAAuB;EACvB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,mBAAmB;EACnB,oDAAoD;AACtD;;AAEA,iCAAiC;AACjC;EACE,eAAe;EACf,eAAe;AACjB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,2BAA2B;EAC3B,mBAAmB;EACnB,gFAAgF;AAClF;;AAEA;EACE,8BAA8B;EAC9B,yBAAyB;AAC3B","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: 'Poppins', sans-serif;\r\n  text-decoration: none;\r\n  list-style: none;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  background-color: whitesmoke;\r\n  gap: 20px;\r\n}\r\n\r\n/* -------logo over text starts here --- */\r\n\r\n.image-header {\r\n  border-radius: 15px;\r\n  margin: 0 0 0 10px;\r\n  display: block;\r\n  width: 200px;\r\n  height: auto;\r\n}\r\n\r\n.container {\r\n  position: relative;\r\n  width: 50%;\r\n}\r\n\r\n.overlay {\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  opacity: 0;\r\n  transition: 0.5s ease;\r\n  background-color: whitesmoke;\r\n}\r\n\r\n.container:hover .overlay {\r\n  opacity: 1;\r\n}\r\n\r\n.text {\r\n  text-shadow: 3px 1px #dadada;\r\n  color: chocolate;\r\n  font-size: 1.7rem;\r\n  font-weight: 900;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 100px;\r\n  -ms-transform: translate(-50%, -50%);\r\n  transform: translate(-50%, -50%);\r\n  cursor: pointer;\r\n}\r\n\r\n/* -------logo over text ends here --- */\r\n\r\n#logo {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n}\r\n\r\n#nav-list {\r\n  margin: 20px;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n}\r\n\r\n.nav a {\r\n  color: rgb(122, 122, 122);\r\n  font-size: 0.8rem;\r\n}\r\n\r\nfooter {\r\n  padding: 0 20px;\r\n  width: 100vw;\r\n  color: #000;\r\n  background-color: whitesmoke;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.image-footer {\r\n  padding: 10px;\r\n  display: block;\r\n  width: 150px;\r\n  height: auto;\r\n}\r\n\r\n/* appened list items start here  */\r\n#item-list {\r\n  margin: 50px 0 50px 0;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  gap: 30px;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n.item-id {\r\n  margin: 20px 0 0 0;\r\n  text-align: center;\r\n}\r\n\r\n.item-image {\r\n  width: 300px;\r\n  border-radius: 20px;\r\n  box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #fff;\r\n}\r\n\r\n/* appened list items end here  */\r\n.like-icon {\r\n  font-size: 32px;\r\n  cursor: pointer;\r\n}\r\n\r\n.liked {\r\n  color: blue;\r\n}\r\n\r\nbutton {\r\n  padding: 10px 20px;\r\n  border: none;\r\n  border-radius: 5px;\r\n  cursor: pointer;\r\n}\r\n\r\nbutton:hover {\r\n  background-color: lightblue;\r\n  color: rgb(0, 0, 0);\r\n  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);\r\n}\r\n\r\nbutton:active {\r\n  background-color: rgb(0, 0, 0);\r\n  color: rgb(255, 255, 255);\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/modules/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;EAClC,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,4BAA4B;EAC5B,SAAS;AACX;;AAEA,0CAA0C;;AAE1C;EACE,mBAAmB;EACnB,kBAAkB;EAClB,cAAc;EACd,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,OAAO;EACP,QAAQ;EACR,YAAY;EACZ,WAAW;EACX,UAAU;EACV,qBAAqB;EACrB,4BAA4B;AAC9B;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,4BAA4B;EAC5B,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;EAClB,QAAQ;EACR,WAAW;EACX,oCAAoC;EACpC,gCAAgC;EAChC,eAAe;AACjB;;AAEA,wCAAwC;;AAExC;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;AACnB;;AAEA;EACE,eAAe;EACf,YAAY;EACZ,WAAW;EACX,4BAA4B;EAC5B,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,YAAY;AACd;;AAEA,mCAAmC;AACnC;EACE,qBAAqB;EACrB,aAAa;EACb,eAAe;EACf,uBAAuB;EACvB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,mBAAmB;EACnB,oDAAoD;AACtD;;AAEA,iCAAiC;AACjC;EACE,eAAe;EACf,eAAe;;EAEf,gCAAgC;AAClC;;AAEA;EACE,WAAW;EACX,eAAe;EACf,eAAe;AACjB;EACE;;MAEI;;QAEE,mBAAmB;MACrB;;MAEA;QACE,qBAAqB;MACvB;IACF;AACJ;EACE,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,2BAA2B;EAC3B,mBAAmB;EACnB,gFAAgF;AAClF;;AAEA;EACE,8BAA8B;EAC9B,yBAAyB;AAC3B","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: 'Poppins', sans-serif;\r\n  text-decoration: none;\r\n  list-style: none;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  background-color: whitesmoke;\r\n  gap: 20px;\r\n}\r\n\r\n/* -------logo over text starts here --- */\r\n\r\n.image-header {\r\n  border-radius: 15px;\r\n  margin: 0 0 0 10px;\r\n  display: block;\r\n  width: 200px;\r\n  height: auto;\r\n}\r\n\r\n.container {\r\n  position: relative;\r\n  width: 50%;\r\n}\r\n\r\n.overlay {\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  opacity: 0;\r\n  transition: 0.5s ease;\r\n  background-color: whitesmoke;\r\n}\r\n\r\n.container:hover .overlay {\r\n  opacity: 1;\r\n}\r\n\r\n.text {\r\n  text-shadow: 3px 1px #dadada;\r\n  color: chocolate;\r\n  font-size: 1.7rem;\r\n  font-weight: 900;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 100px;\r\n  -ms-transform: translate(-50%, -50%);\r\n  transform: translate(-50%, -50%);\r\n  cursor: pointer;\r\n}\r\n\r\n/* -------logo over text ends here --- */\r\n\r\n#logo {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n}\r\n\r\n#nav-list {\r\n  margin: 20px;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n}\r\n\r\n.nav a {\r\n  color: rgb(122, 122, 122);\r\n  font-size: 0.8rem;\r\n}\r\n\r\nfooter {\r\n  padding: 0 20px;\r\n  width: 100vw;\r\n  color: #000;\r\n  background-color: whitesmoke;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.image-footer {\r\n  padding: 10px;\r\n  display: block;\r\n  width: 150px;\r\n  height: auto;\r\n}\r\n\r\n/* appened list items start here  */\r\n#item-list {\r\n  margin: 50px 0 50px 0;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  gap: 30px;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n.item-id {\r\n  margin: 20px 0 0 0;\r\n  text-align: center;\r\n}\r\n\r\n.item-image {\r\n  width: 300px;\r\n  border-radius: 20px;\r\n  box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #fff;\r\n}\r\n\r\n/* appened list items end here  */\r\n.like-icon {\r\n  font-size: 32px;\r\n  cursor: pointer;\r\n\r\n  animation: heartBeat 1s infinite;\r\n}\r\n\r\n.liked {\r\n  color: blue;\r\n  cursor: default;\r\n  animation: none;\r\n}\r\n  @keyframes heartBeat {\r\n  \r\n      0%,\r\n      100% {\r\n        transform: scale(1);\r\n      }\r\n  \r\n      50% {\r\n        transform: scale(1.4);\r\n      }\r\n    }\r\nbutton {\r\n  padding: 10px 20px;\r\n  border: none;\r\n  border-radius: 5px;\r\n  cursor: pointer;\r\n}\r\n\r\nbutton:hover {\r\n  background-color: lightblue;\r\n  color: rgb(0, 0, 0);\r\n  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);\r\n}\r\n\r\nbutton:active {\r\n  background-color: rgb(0, 0, 0);\r\n  color: rgb(255, 255, 255);\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -669,12 +683,13 @@ const getFoodItems = async () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getLikes: () => (/* binding */ getLikes),
-/* harmony export */   saveLikes: () => (/* binding */ saveLikes)
+/* harmony export */   saveLikes: () => (/* binding */ saveLikes),
+/* harmony export */   updateLikes: () => (/* binding */ updateLikes)
 /* harmony export */ });
 /* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.js */ "./src/modules/api.js");
 
 
-async function getLikes() {
+const getLikes = async () => {
   try {
     const response = await fetch(`${_api_js__WEBPACK_IMPORTED_MODULE_0__.apiUrl}/likes`, {
       method: 'GET',
@@ -693,9 +708,9 @@ async function getLikes() {
     console.error('Error fetching likes:', error);
     return [];
   }
-}
+};
 
-async function saveLikes(id) {
+const saveLikes = async (id) => {
   try {
     const response = await fetch(`${_api_js__WEBPACK_IMPORTED_MODULE_0__.apiUrl}/likes`, {
       method: 'POST',
@@ -710,10 +725,24 @@ async function saveLikes(id) {
     }
 
     console.log('Like saved successfully');
+    const likedItems = JSON.parse(localStorage.getItem('likedItems')) || [];
+    likedItems.push(id);
+    localStorage.setItem('likedItems', JSON.stringify(likedItems));
   } catch (error) {
     console.error('Error saving like:', error);
   }
-}
+};
+
+const updateLikes = async (likeCountElement, id) => {
+  const dataLikes = await getLikes();
+  const likeCount = dataLikes.find((obj) => obj.item_id === id);
+  if (likeCount) {
+    likeCountElement.textContent = `${likeCount.likes} likes`;
+  } else {
+    likeCountElement.textContent = `0 likes`;
+  }
+  likeCountElement.textContent = `${likeCount.likes} likes`;
+};
 
 
 
@@ -753,6 +782,9 @@ const logo = () => {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var _getItems_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getItems.js */ "./src/modules/getItems.js");
 /* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./api.js */ "./src/modules/api.js");
 /* harmony import */ var _likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./likesFunctions.js */ "./src/modules/likesFunctions.js");
@@ -769,18 +801,7 @@ __webpack_require__.r(__webpack_exports__);
     console.error('Error fetching data:', error);
   });
 
-async function updateLikes(likeCountElement, id) {
-  const dataLikes = await (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__.getLikes)();
-  const likeCount = dataLikes.find((obj) => obj.item_id === id);
-  if (likeCount) {
-    likeCountElement.textContent = `${likeCount.likes} likes`;
-  } else {
-    likeCountElement.textContent = `0 likes`;
-  }
-  likeCountElement.textContent = `${likeCount.likes} likes`;
-}
-
-async function renderItemList(items) {
+const renderItemList = async (items) => {
   const itemListElement = document.getElementById('item-list');
 
   items.forEach(async (item) => {
@@ -794,6 +815,11 @@ async function renderItemList(items) {
 
     const likeButton = document.createElement('i');
     likeButton.className = 'like-icon fa-solid fa-thin fa-thumbs-up';
+    const likedItems = JSON.parse(localStorage.getItem('likedItems')) || [];
+    if (likedItems.includes(item.idMeal)) {
+      likeButton.classList.add('liked');
+      likeButton.disabled = true;
+    }
 
     const likeCountElement = document.createElement('div');
     likeCountElement.className = 'like-count';
@@ -812,28 +838,29 @@ async function renderItemList(items) {
       if (!likeButton.classList.contains('liked')) {
         await (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__.saveLikes)(item.idMeal);
         likeButton.classList.add('liked');
-        updateLikes(likeCountElement, item.idMeal);
+        (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__.updateLikes)(likeCountElement, item.idMeal);
       }
     });
 
-    updateLikes(likeCountElement, item.idMeal);
+    (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__.updateLikes)(likeCountElement, item.idMeal);
   });
-}
+};
 
-async function initializeItemList() {
-  try {
-    const response = await fetch(_api_js__WEBPACK_IMPORTED_MODULE_1__.FOOD_BASE_URL);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch items with status: ${response.status}`);
-    }
-    const data = await response.json();
-    renderItemList(data.meals);
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  }
-}
+// const initializeItemList = async () => {
+//   try {
+//     const response = await fetch(FOOD_BASE_URL);
+//     if (!response.ok) {
+//       throw new Error(`Failed to fetch items with status: ${response.status}`);
+//     }
+//     const data = await response.json();
+//     renderItemList(data.meals);
+//   } catch (error) {
+//     console.error('Error fetching data:', error);
+//   }
+// };
 
-initializeItemList();
+// initializeItemList();
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderItemList);
 
 
 /***/ }),
@@ -970,9 +997,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function init() {
+const init = () => {
   (0,_modules_logo_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
-}
+  (0,_modules_renderLists_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
+};
 init();
 
 })();
