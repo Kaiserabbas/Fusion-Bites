@@ -11,10 +11,15 @@ getFoodItems()
     console.error('Error fetching data:', error);
   });
 
-async function updateLikes(likeCountElement, itemId) {
-  const likesData = await getLikes();
-  const likeCount = likesData.filter((like) => like.item_id === itemId).length;
-  likeCountElement.textContent = likeCount;
+async function updateLikes(likeCountElement, id) {
+  const dataLikes = await getLikes();
+  const likeCount = dataLikes.find((obj) => obj.item_id === id);
+  if (likeCount) {
+    likeCountElement.textContent = `${likeCount.likes} likes`;
+  } else {
+    likeCountElement.textContent = `0 likes`;
+  }
+  likeCountElement.textContent = `${likeCount.likes} likes`;
 }
 
 async function renderItemList(items) {

@@ -21,14 +21,14 @@ async function getLikes() {
   }
 }
 
-async function saveLikes(itemId) {
+async function saveLikes(id) {
   try {
     const response = await fetch(`${apiUrl}/likes`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ item_id: itemId }),
+      body: JSON.stringify({ item_id: id }),
     });
 
     if (!response.ok) {
