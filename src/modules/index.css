@@ -125,7 +125,6 @@ footer {
 .like-icon {
   font-size: 32px;
   cursor: pointer;
-
   animation: heartBeat 1s infinite;
 }
 
@@ -134,17 +133,18 @@ footer {
   cursor: default;
   animation: none;
 }
-  @keyframes heartBeat {
-  
-      0%,
-      100% {
-        transform: scale(1);
-      }
-  
-      50% {
-        transform: scale(1.4);
-      }
-    }
+
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+}
+
 button {
   padding: 10px 20px;
   border: none;
