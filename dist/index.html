@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <title>Fusion Bites</title>
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <header id="header">
+      <div id="logo" class="container">
+        <img alt="logo" class="image-header" />
+        <div class="overlay">
+          <h1 class="text">Fusion Bites</h1>
+        </div>
+      </div>
+      <nav>
+        <ul id="nav-list">
+          <li class="nav"><a href="#item-list" id="nav-dishes">Dishes</a></li>
+          <li class="nav"><a href="#about">About</a></li>
+          <li class="nav"><a href="#contact">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="item-list" class="list">
+      <!-- Item list will be populated dynamically using JavaScript -->
+    </div>
+
+    <!-- Popup window -->
+    <div id="popup">
+      <!-- Popup content will be populated dynamically using JavaScript -->
+    </div>
+    <hr />
+    <div id="about" class="list">
+      <h1>Fusion-Bites</h1>
+      <h2>About Us</h2>
+      <p>
+        Fusion-Bites is a restaurant that offers a variety of Pakistani dishes,
+        all made with fresh, authentic ingredients. We believe in fusing
+        traditional Pakistani flavors with modern techniques to create a unique
+        dining experience.
+      </p>
+      <p>
+        Our menu features everything from classic dishes like biryani and tikka
+        masala to more modern creations like fusion burgers and pizzas. We also
+        have a wide selection of vegetarian and vegan options.
+      </p>
+      <p>
+        Whether you're looking for a taste of home or something new to try,
+        Fusion-Bites is the perfect place to satisfy your cravings. Come in and
+        experience the fusion of flavors for yourself!
+      </p>
+      <a href="#item-list">View our menu</a>
+      <a href="#contact">Contact us</a>
+    </div>
+    <hr />
+    <div id="contact" class="list">
+      <h1>Contact Us</h1>
+      <p>We're here to help!</p>
+      <form action="https://formspree.io/f/mdovrdrq" method="POST">
+        <input type="text" name="name" placeholder="Your Name" />
+        <input type="email" name="email" placeholder="Your Email" />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+    <footer>
+      <div>
+        <img alt="logo" class="image-footer" />
+      </div>
+      <div>
+        <small
+          >&copy; 2023 <b>Fusion Bites Restaurant</b> . All rights reserved.
+          Designed and developed by <b>Qaisar Abbas</b>.
+          <a href="mailto:kayser.abbas@gmail.com">Email-></a> Content licensed
+          under the <b>MIT License</b> .</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>

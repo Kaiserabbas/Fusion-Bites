@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  gap: 20px;
+}
+
+/* -------logo over text starts here --- */
+
+.image-header {
+  border-radius: 15px;
+  margin: 0 0 0 10px;
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: whitesmoke;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  text-shadow: 3px 1px #dadada;
+  color: chocolate;
+  font-size: 1.7rem;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* -------logo over text ends here --- */
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#nav-list {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  color: rgb(122, 122, 122);
+  font-size: 0.8rem;
+}
+
+footer {
+  padding: 0 20px;
+  width: 100vw;
+  color: #000;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.image-footer {
+  padding: 10px;
+  display: block;
+  width: 150px;
+  height: auto;
+}
+
+/* appened list items start here  */
+#item-list {
+  margin: 50px 0 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-id {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.item-image {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #fff;
+}
+
+/* appened list items end here  */
+.like-icon {
+  font-size: 32px;
+  cursor: pointer;
+  animation: heartBeat 1s infinite;
+}
+
+.liked {
+  color: blue;
+  cursor: default;
+  animation: none;
+}
+
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightblue;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:active {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+/* popup section  */
+
+/* Add your styles here */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  overflow-y: scroll;
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 100%;
+  width: 700px;
+  height: 90vh;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.popup-content .additional-details {
+  padding: 10px;
+}
+
+.comments-container {
+  max-height: 200px;
+
+  /* Set a maximum height for the comments container */
+  overflow-y: auto;
+
+  /* Enable vertical scrolling within the comments container */
+}
+
+.close-button {
+  margin: 10px 10px 0 0;
+  width: 35px;
+  height: auto;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.popup-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.username {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.comments-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.comment-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* popup section  */
+
+/* about section */
+#about {
+  padding: 10px 20px;
+  position: relative;
+  left: 25%;
+  max-width: 50%;
+  text-align: center;
+}
+
+#about h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+#about p {
+  margin-bottom: 1em;
+}
+
+#about a {
+  text-decoration: none;
+  color: #000;
+}
+
+#about a:hover {
+  color: #fff;
+}
+
+#about .button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#about .button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* about section */
+
+/* contact section */
+
+#contact {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 2em;
+}
+
+#contact p {
+  margin-bottom: 1em;
+}
+
+#contact input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* contact section */
+hr {
+  margin: 50px 0 50px 0;
+  position: relative;
+  left: 25%;
+  width: 50%;
+}
