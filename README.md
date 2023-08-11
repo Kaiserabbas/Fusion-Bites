@@ -6,6 +6,7 @@ Welcome to Fusion Bites Restaurant GitHub repository! This repository contains a
 <h1 id="#top">Table of Contents</h1>
 
 - [About](#about)
+- [Project Descriprtion](#description)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -18,6 +19,13 @@ Welcome to Fusion Bites Restaurant GitHub repository! This repository contains a
 
 <h2 id="#about">🍽️ About</h2>
 Fusion Bites is a unique and innovative restaurant that celebrates the fusion of diverse flavors and culinary traditions from around the world. Our talented chefs combine the best elements of various cuisines to create a harmonious blend of tastes that will tantalize your senses.
+
+[Back to Top ⬆️](#top)
+
+<h2 id="#description">🥘 Project Description </h2>
+Watch this video for more details:
+
+https://www.loom.com/share/7692e2ccdf5242d2bdfbbdbc7a521088?sid=c2a79393-4863-470f-873d-ea930afe5473
 
 [Back to Top ⬆️](#top)
 
