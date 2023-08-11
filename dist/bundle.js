@@ -185,7 +185,99 @@ button:active {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
-`, "",{"version":3,"sources":["webpack://./src/modules/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;EAClC,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,4BAA4B;EAC5B,SAAS;AACX;;AAEA,0CAA0C;;AAE1C;EACE,mBAAmB;EACnB,kBAAkB;EAClB,cAAc;EACd,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,OAAO;EACP,QAAQ;EACR,YAAY;EACZ,WAAW;EACX,UAAU;EACV,qBAAqB;EACrB,4BAA4B;AAC9B;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,4BAA4B;EAC5B,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;EAClB,QAAQ;EACR,WAAW;EACX,oCAAoC;EACpC,gCAAgC;EAChC,eAAe;AACjB;;AAEA,wCAAwC;;AAExC;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;AACnB;;AAEA;EACE,eAAe;EACf,YAAY;EACZ,WAAW;EACX,4BAA4B;EAC5B,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,YAAY;AACd;;AAEA,mCAAmC;AACnC;EACE,qBAAqB;EACrB,aAAa;EACb,eAAe;EACf,uBAAuB;EACvB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,mBAAmB;EACnB,oDAAoD;AACtD;;AAEA,iCAAiC;AACjC;EACE,eAAe;EACf,eAAe;;EAEf,gCAAgC;AAClC;;AAEA;EACE,WAAW;EACX,eAAe;EACf,eAAe;AACjB;EACE;;MAEI;;QAEE,mBAAmB;MACrB;;MAEA;QACE,qBAAqB;MACvB;IACF;AACJ;EACE,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,2BAA2B;EAC3B,mBAAmB;EACnB,gFAAgF;AAClF;;AAEA;EACE,8BAA8B;EAC9B,yBAAyB;AAC3B","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: 'Poppins', sans-serif;\r\n  text-decoration: none;\r\n  list-style: none;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  background-color: whitesmoke;\r\n  gap: 20px;\r\n}\r\n\r\n/* -------logo over text starts here --- */\r\n\r\n.image-header {\r\n  border-radius: 15px;\r\n  margin: 0 0 0 10px;\r\n  display: block;\r\n  width: 200px;\r\n  height: auto;\r\n}\r\n\r\n.container {\r\n  position: relative;\r\n  width: 50%;\r\n}\r\n\r\n.overlay {\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  opacity: 0;\r\n  transition: 0.5s ease;\r\n  background-color: whitesmoke;\r\n}\r\n\r\n.container:hover .overlay {\r\n  opacity: 1;\r\n}\r\n\r\n.text {\r\n  text-shadow: 3px 1px #dadada;\r\n  color: chocolate;\r\n  font-size: 1.7rem;\r\n  font-weight: 900;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 100px;\r\n  -ms-transform: translate(-50%, -50%);\r\n  transform: translate(-50%, -50%);\r\n  cursor: pointer;\r\n}\r\n\r\n/* -------logo over text ends here --- */\r\n\r\n#logo {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n}\r\n\r\n#nav-list {\r\n  margin: 20px;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n}\r\n\r\n.nav a {\r\n  color: rgb(122, 122, 122);\r\n  font-size: 0.8rem;\r\n}\r\n\r\nfooter {\r\n  padding: 0 20px;\r\n  width: 100vw;\r\n  color: #000;\r\n  background-color: whitesmoke;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.image-footer {\r\n  padding: 10px;\r\n  display: block;\r\n  width: 150px;\r\n  height: auto;\r\n}\r\n\r\n/* appened list items start here  */\r\n#item-list {\r\n  margin: 50px 0 50px 0;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  gap: 30px;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n.item-id {\r\n  margin: 20px 0 0 0;\r\n  text-align: center;\r\n}\r\n\r\n.item-image {\r\n  width: 300px;\r\n  border-radius: 20px;\r\n  box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #fff;\r\n}\r\n\r\n/* appened list items end here  */\r\n.like-icon {\r\n  font-size: 32px;\r\n  cursor: pointer;\r\n\r\n  animation: heartBeat 1s infinite;\r\n}\r\n\r\n.liked {\r\n  color: blue;\r\n  cursor: default;\r\n  animation: none;\r\n}\r\n  @keyframes heartBeat {\r\n  \r\n      0%,\r\n      100% {\r\n        transform: scale(1);\r\n      }\r\n  \r\n      50% {\r\n        transform: scale(1.4);\r\n      }\r\n    }\r\nbutton {\r\n  padding: 10px 20px;\r\n  border: none;\r\n  border-radius: 5px;\r\n  cursor: pointer;\r\n}\r\n\r\nbutton:hover {\r\n  background-color: lightblue;\r\n  color: rgb(0, 0, 0);\r\n  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);\r\n}\r\n\r\nbutton:active {\r\n  background-color: rgb(0, 0, 0);\r\n  color: rgb(255, 255, 255);\r\n}\r\n"],"sourceRoot":""}]);
+/* popup section  */
+/* Add your styles here */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  overflow-y: scroll;
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 100%;
+  width: 700px;
+  height: 90vh;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.popup-content .additional-details {
+  padding: 10px;
+}
+
+.comments-container {
+  max-height: 200px;
+  /* Set a maximum height for the comments container */
+  overflow-y: auto;
+  /* Enable vertical scrolling within the comments container */
+}
+
+.close-button {
+  margin: 10px 10px 0 0;
+  width: 35px;
+  height: auto;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.popup-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.username {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.comments-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.comment-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* popup section  */`, "",{"version":3,"sources":["webpack://./src/modules/index.css"],"names":[],"mappings":"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","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: 'Poppins', sans-serif;\r\n  text-decoration: none;\r\n  list-style: none;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  background-color: whitesmoke;\r\n  gap: 20px;\r\n}\r\n\r\n/* -------logo over text starts here --- */\r\n\r\n.image-header {\r\n  border-radius: 15px;\r\n  margin: 0 0 0 10px;\r\n  display: block;\r\n  width: 200px;\r\n  height: auto;\r\n}\r\n\r\n.container {\r\n  position: relative;\r\n  width: 50%;\r\n}\r\n\r\n.overlay {\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  opacity: 0;\r\n  transition: 0.5s ease;\r\n  background-color: whitesmoke;\r\n}\r\n\r\n.container:hover .overlay {\r\n  opacity: 1;\r\n}\r\n\r\n.text {\r\n  text-shadow: 3px 1px #dadada;\r\n  color: chocolate;\r\n  font-size: 1.7rem;\r\n  font-weight: 900;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 100px;\r\n  -ms-transform: translate(-50%, -50%);\r\n  transform: translate(-50%, -50%);\r\n  cursor: pointer;\r\n}\r\n\r\n/* -------logo over text ends here --- */\r\n\r\n#logo {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n}\r\n\r\n#nav-list {\r\n  margin: 20px;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n}\r\n\r\n.nav a {\r\n  color: rgb(122, 122, 122);\r\n  font-size: 0.8rem;\r\n}\r\n\r\nfooter {\r\n  padding: 0 20px;\r\n  width: 100vw;\r\n  color: #000;\r\n  background-color: whitesmoke;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.image-footer {\r\n  padding: 10px;\r\n  display: block;\r\n  width: 150px;\r\n  height: auto;\r\n}\r\n\r\n/* appened list items start here  */\r\n#item-list {\r\n  margin: 50px 0 50px 0;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  gap: 30px;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n.item-id {\r\n  margin: 20px 0 0 0;\r\n  text-align: center;\r\n}\r\n\r\n.item-image {\r\n  width: 300px;\r\n  border-radius: 20px;\r\n  box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #fff;\r\n}\r\n\r\n/* appened list items end here  */\r\n.like-icon {\r\n  font-size: 32px;\r\n  cursor: pointer;\r\n\r\n  animation: heartBeat 1s infinite;\r\n}\r\n\r\n.liked {\r\n  color: blue;\r\n  cursor: default;\r\n  animation: none;\r\n}\r\n  @keyframes heartBeat {\r\n  \r\n      0%,\r\n      100% {\r\n        transform: scale(1);\r\n      }\r\n  \r\n      50% {\r\n        transform: scale(1.4);\r\n      }\r\n    }\r\nbutton {\r\n  padding: 10px 20px;\r\n  border: none;\r\n  border-radius: 5px;\r\n  cursor: pointer;\r\n}\r\n\r\nbutton:hover {\r\n  background-color: lightblue;\r\n  color: rgb(0, 0, 0);\r\n  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);\r\n}\r\n\r\nbutton:active {\r\n  background-color: rgb(0, 0, 0);\r\n  color: rgb(255, 255, 255);\r\n}\r\n/* popup section  */\r\n/* Add your styles here */\r\n.popup-container {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100vh;\r\n  background-color: rgba(0, 0, 0, 0.7);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  z-index: 999;\r\n  overflow-y: scroll;\r\n}\r\n\r\n.popup-content {\r\n  background-color: #fff;\r\n  border-radius: 8px;\r\n  padding: 20px;\r\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n  position: relative;\r\n  max-width: 100%;\r\n  width: 700px;\r\n  height: 90vh;\r\n  text-align: center;\r\n  overflow-y: scroll;\r\n}\r\n\r\n.popup-content .additional-details {\r\n  padding: 10px;\r\n}\r\n\r\n.comments-container {\r\n  max-height: 200px;\r\n  /* Set a maximum height for the comments container */\r\n  overflow-y: auto;\r\n  /* Enable vertical scrolling within the comments container */\r\n}\r\n\r\n.close-button {\r\n  margin: 10px 10px 0 0;\r\n  width: 35px;\r\n  height: auto;\r\n  background-color: black;\r\n  color: white;\r\n  border: 1px solid black;\r\n  position: absolute;\r\n  top: 10px;\r\n  right: 10px;\r\n  font-size: 24px;\r\n  cursor: pointer;\r\n}\r\n\r\n.close-button:hover {\r\n  background-color: white;\r\n  color: black;\r\n}\r\n\r\n.popup-image {\r\n  width: 100%;\r\n  max-height: 300px;\r\n  object-fit: cover;\r\n  border-radius: 8px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.username {\r\n  width: 100%;\r\n  padding: 10px;\r\n  border: 1px solid #ccc;\r\n  border-radius: 4px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.comments-textarea {\r\n  width: 100%;\r\n  padding: 10px;\r\n  border: 1px solid #ccc;\r\n  border-radius: 4px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.comment-button {\r\n  background-color: #007bff;\r\n  color: #fff;\r\n  border: none;\r\n  padding: 8px 16px;\r\n  border-radius: 4px;\r\n  cursor: pointer;\r\n}\r\n\r\n/* popup section  */"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -651,6 +743,58 @@ const apiUrl = `https://us-central1-involvement-api.cloudfunctions.net/capstoneA
 
 /***/ }),
 
+/***/ "./src/modules/commentCounter.js":
+/*!***************************************!*\
+  !*** ./src/modules/commentCounter.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const updateCommentCount = (count, commentCountElement) => {
+    commentCountElement.textContent = `Counter: ${count}`;
+  };
+  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (updateCommentCount);
+
+/***/ }),
+
+/***/ "./src/modules/getComments.js":
+/*!************************************!*\
+  !*** ./src/modules/getComments.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   fetchComments: () => (/* binding */ fetchComments),
+/* harmony export */   sendComment: () => (/* binding */ sendComment)
+/* harmony export */ });
+const sendComment = async (id, username, comment) => {
+    const request = await fetch(`${apiUrl}/comments/`, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify({
+        item_id: id,
+        username: username,
+        comment: comment,
+      }),
+    });
+  };
+  
+  const fetchComments = async (id) => {
+    const request = await fetch(`${apiUrl}/comments?item_id=${id}`);
+    const response = await request.json();
+    return response;
+  };
+  
+  
+
+/***/ }),
+
 /***/ "./src/modules/getItems.js":
 /*!*********************************!*\
   !*** ./src/modules/getItems.js ***!
@@ -749,6 +893,24 @@ const updateLikes = async (likeCountElement, id) => {
 
 /***/ }),
 
+/***/ "./src/modules/listCounter.js":
+/*!************************************!*\
+  !*** ./src/modules/listCounter.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const updateListCounter = (count) => {
+    const listCounterElement = document.getElementById('nav-dishes');
+    listCounterElement.textContent = `(${count}) Dishes`;
+  };
+  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (updateListCounter);
+
+/***/ }),
+
 /***/ "./src/modules/logo.js":
 /*!*****************************!*\
   !*** ./src/modules/logo.js ***!
@@ -775,6 +937,151 @@ const logo = () => {
 
 /***/ }),
 
+/***/ "./src/modules/popup.js":
+/*!******************************!*\
+  !*** ./src/modules/popup.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   applyPopup: () => (/* binding */ applyPopup)
+/* harmony export */ });
+/* harmony import */ var _getComments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getComments.js */ "./src/modules/getComments.js");
+/* harmony import */ var _commentCounter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commentCounter.js */ "./src/modules/commentCounter.js");
+ // Import comment-related functions
+
+const fetchFoodDetails = async (id) => {
+  const request = await fetch(
+    `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
+  );
+  const response = await request.json();
+  const data = response.meals[0];
+  return data;
+};
+
+const applyPopup = async (itemId, items) => {
+  const item = getItemById(itemId, items);
+  if (!item) return;
+  const detailedItem = await fetchFoodDetails(itemId); // Fetch additional details
+
+  const popupContainer = document.createElement('div');
+  popupContainer.className = 'popup-container';
+
+  const popupContent = document.createElement('div');
+  popupContent.className = 'popup-content';
+
+  const closeButton = document.createElement('span');
+  closeButton.className = 'close-button';
+  closeButton.innerHTML = '&times;';
+  closeButton.addEventListener('click', () => {
+    popupContainer.remove();
+  });
+
+  const popupImage = document.createElement('img');
+  popupImage.className = 'popup-image';
+  popupImage.src = item.strMealThumb;
+
+  const itemName = document.createElement('h2');
+  itemName.textContent = item.strMeal;
+
+  const additionalDetails = document.createElement('div');
+  additionalDetails.className = 'additional-details';
+
+  const category = document.createElement('p');
+  category.textContent = `Category: ${detailedItem.strCategory}`;
+
+  const instructions = document.createElement('p');
+  instructions.textContent = `Instructions: ${detailedItem.strInstructions}`;
+
+  const usernameElement = document.createElement('input');
+  usernameElement.className = 'username';
+  usernameElement.placeholder = 'Enter your username'; // Placeholder text
+
+  const commentsTextArea = document.createElement('textarea');
+  commentsTextArea.className = 'comments-textarea';
+  commentsTextArea.placeholder = 'Leave a comment...';
+
+  const commentButton = document.createElement('button');
+  commentButton.className = 'comment-button';
+  commentButton.textContent = 'Comment';
+  commentButton.addEventListener('click', async () => {
+    const comment = commentsTextArea.value;
+    const username = usernameElement.value; // Get username from the input field
+    if (comment.trim() !== '' && username.trim() !== '') {
+      await (0,_getComments_js__WEBPACK_IMPORTED_MODULE_0__.sendComment)(item.idMeal, username, comment);
+      commentsTextArea.value = '';
+      updateComments(item.idMeal, popupContent);
+    }
+  });
+
+  const commentCountElement = document.createElement('div');
+  commentCountElement.className = 'comment-count';
+  commentCountElement.textContent = '0 Comments'; // Initialize with 0 comments
+
+  (0,_commentCounter_js__WEBPACK_IMPORTED_MODULE_1__["default"])(0, commentCountElement); // Initialize comment count
+
+  additionalDetails.appendChild(category);
+  additionalDetails.appendChild(instructions);
+
+  popupContent.appendChild(closeButton);
+  popupContent.appendChild(popupImage);
+  popupContent.appendChild(itemName);
+  popupContent.appendChild(additionalDetails); // Append additional details
+
+  popupContent.appendChild(usernameElement);
+  popupContent.appendChild(commentsTextArea);
+  popupContent.appendChild(commentButton);
+  popupContent.appendChild(commentCountElement);
+
+  popupContainer.appendChild(popupContent);
+  document.body.appendChild(popupContainer);
+  updateComments(item.idMeal, popupContent, commentCountElement); // Pass commentCountElement
+};
+
+const getItemById = (itemId, items) => {
+  return items.find((item) => item.idMeal === itemId);
+};
+
+const updateComments = async (itemId, popupContent, commentCountElement) => {
+  const commentsContainer = document.createElement('div');
+  commentsContainer.className = 'comments-container';
+
+  const comments = await (0,_getComments_js__WEBPACK_IMPORTED_MODULE_0__.fetchComments)(itemId);
+
+  if (Array.isArray(comments)) {
+    // Check if comments is an array
+    comments.forEach((commentData) => {
+      const commentElement = document.createElement('div');
+      commentElement.className = 'comment';
+      commentElement.innerHTML = `<strong>${commentData.username}:</strong> ${commentData.comment}`;
+      commentsContainer.appendChild(commentElement);
+    });
+
+    const commentCountElement = document.querySelector('.comment-count');
+    if (commentCountElement) {
+      (0,_commentCounter_js__WEBPACK_IMPORTED_MODULE_1__["default"])(comments.length, commentCountElement);
+    }
+  } else {
+    // Handle the case where comments is not an array (e.g., if it's an object or null)
+    const errorMessage = document.createElement('div');
+    errorMessage.textContent = 'No comments available.';
+    commentsContainer.appendChild(errorMessage);
+    (0,_commentCounter_js__WEBPACK_IMPORTED_MODULE_1__["default"])(0, commentCountElement); // Update comment count
+  }
+
+  const existingCommentsContainer = popupContent.querySelector(
+    '.comments-container'
+  );
+  if (existingCommentsContainer) {
+    existingCommentsContainer.replaceWith(commentsContainer);
+  } else {
+    popupContent.appendChild(commentsContainer);
+  }
+};
+
+/***/ }),
+
 /***/ "./src/modules/renderLists.js":
 /*!************************************!*\
   !*** ./src/modules/renderLists.js ***!
@@ -786,8 +1093,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _getItems_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getItems.js */ "./src/modules/getItems.js");
-/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./api.js */ "./src/modules/api.js");
-/* harmony import */ var _likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./likesFunctions.js */ "./src/modules/likesFunctions.js");
+/* harmony import */ var _likesFunctions_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./likesFunctions.js */ "./src/modules/likesFunctions.js");
+/* harmony import */ var _popup_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./popup.js */ "./src/modules/popup.js");
+/* harmony import */ var _listCounter_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./listCounter.js */ "./src/modules/listCounter.js");
+
 
 
 
@@ -800,6 +1109,7 @@ __webpack_require__.r(__webpack_exports__);
   .catch((error) => {
     console.error('Error fetching data:', error);
   });
+const username = 'YourUsername';
 
 const renderItemList = async (items) => {
   const itemListElement = document.getElementById('item-list');
@@ -828,38 +1138,34 @@ const renderItemList = async (items) => {
     innerImage.className = 'item-image';
     innerImage.src = item.strMealThumb;
 
+    const commentButton = document.createElement('button');
+    commentButton.className = 'item-comment';
+    commentButton.textContent = 'Comments';
+    commentButton.addEventListener('click', async () => {
+      (0,_popup_js__WEBPACK_IMPORTED_MODULE_2__.applyPopup)(item.idMeal, items, username); // Pass the 'items' array and username
+    });
+
     itemElement.appendChild(innerImage);
     itemElement.appendChild(itemId);
     itemElement.appendChild(likeButton);
     itemElement.appendChild(likeCountElement);
+    itemElement.appendChild(commentButton);
+
     itemListElement.appendChild(itemElement);
 
     likeButton.addEventListener('click', async () => {
       if (!likeButton.classList.contains('liked')) {
-        await (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__.saveLikes)(item.idMeal);
+        await (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_1__.saveLikes)(item.idMeal);
         likeButton.classList.add('liked');
-        (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__.updateLikes)(likeCountElement, item.idMeal);
+        (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_1__.updateLikes)(likeCountElement, item.idMeal);
       }
     });
-
-    (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_2__.updateLikes)(likeCountElement, item.idMeal);
+    // Update the list counter
+    (0,_listCounter_js__WEBPACK_IMPORTED_MODULE_3__["default"])(items.length);
+    (0,_likesFunctions_js__WEBPACK_IMPORTED_MODULE_1__.updateLikes)(likeCountElement, item.idMeal);
   });
 };
 
-// const initializeItemList = async () => {
-//   try {
-//     const response = await fetch(FOOD_BASE_URL);
-//     if (!response.ok) {
-//       throw new Error(`Failed to fetch items with status: ${response.status}`);
-//     }
-//     const data = await response.json();
-//     renderItemList(data.meals);
-//   } catch (error) {
-//     console.error('Error fetching data:', error);
-//   }
-// };
-
-// initializeItemList();
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderItemList);
 
 
