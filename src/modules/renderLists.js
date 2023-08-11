@@ -1,6 +1,7 @@
 import getFoodItems from './getItems.js';
-import { FOOD_BASE_URL } from './api.js';
 import { updateLikes, saveLikes } from './likesFunctions.js';
+import applyPopup from './popup.js';
+import updateListCounter from './listCounter.js';
 
 // Fetch data from the API and display the item list
 getFoodItems()
@@ -10,6 +11,7 @@ getFoodItems()
   .catch((error) => {
     console.error('Error fetching data:', error);
   });
+const username = 'YourUsername';
 
 const renderItemList = async (items) => {
   const itemListElement = document.getElementById('item-list');
@@ -38,10 +40,19 @@ const renderItemList = async (items) => {
     innerImage.className = 'item-image';
     innerImage.src = item.strMealThumb;
 
+    const commentButton = document.createElement('button');
+    commentButton.className = 'item-comment';
+    commentButton.textContent = 'Comments';
+    commentButton.addEventListener('click', async () => {
+      applyPopup(item.idMeal, items, username); // Pass the 'items' array and username
+    });
+
     itemElement.appendChild(innerImage);
     itemElement.appendChild(itemId);
     itemElement.appendChild(likeButton);
     itemElement.appendChild(likeCountElement);
+    itemElement.appendChild(commentButton);
+
     itemListElement.appendChild(itemElement);
 
     likeButton.addEventListener('click', async () => {
@@ -51,7 +62,8 @@ const renderItemList = async (items) => {
         updateLikes(likeCountElement, item.idMeal);
       }
     });
-
+    // Update the list counter
+    updateListCounter(items.length);
     updateLikes(likeCountElement, item.idMeal);
   });
 };
