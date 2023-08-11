@@ -25,7 +25,9 @@ Fusion Bites is a unique and innovative restaurant that celebrates the fusion of
 <h2 id="#description">🥘 Project Description </h2>
 Watch this video for more details:
 
-https://www.loom.com/share/7692e2ccdf5242d2bdfbbdbc7a521088?sid=c2a79393-4863-470f-873d-ea930afe5473
+
+https://github.com/Kaiserabbas/Fusion-Bites/assets/123939543/64e2a083-ab87-40b2-8da9-da1a77fd05c3
+
 
 [Back to Top ⬆️](#top)
 
