@@ -1,4 +1,5 @@
 import { apiUrl } from './api.js';
+
 const sendComment = async (id, username, comment) => {
   const request = await fetch(`${apiUrl}/comments/`, {
     method: 'POST',

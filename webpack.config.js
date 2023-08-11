@@ -24,6 +24,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.jsx?$/,
+        exclude: path.resolve(__dirname, 'src', 'node_modules'),
+        use: ['babel-loader'],
+      },
+      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },

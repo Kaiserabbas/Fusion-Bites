@@ -1,5 +1,6 @@
 import { sendComment, fetchComments } from './getComments.js'; // Import comment-related functions
 import updateCommentCount from './commentCounter.js';
+
 const fetchFoodDetails = async (id) => {
   const request = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
@@ -9,7 +10,7 @@ const fetchFoodDetails = async (id) => {
   return data;
 };
 
-export const applyPopup = async (itemId, items) => {
+const applyPopup = async (itemId, items) => {
   const item = getItemById(itemId, items);
   if (!item) return;
   const detailedItem = await fetchFoodDetails(itemId); // Fetch additional details
@@ -128,3 +129,5 @@ const updateComments = async (itemId, popupContent, commentCountElement) => {
     popupContent.appendChild(commentsContainer);
   }
 };
+
+export default applyPopup;

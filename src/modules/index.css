@@ -125,7 +125,6 @@ footer {
 .like-icon {
   font-size: 32px;
   cursor: pointer;
-
   animation: heartBeat 1s infinite;
 }
 
@@ -134,17 +133,18 @@ footer {
   cursor: default;
   animation: none;
 }
-  @keyframes heartBeat {
-  
-      0%,
-      100% {
-        transform: scale(1);
-      }
-  
-      50% {
-        transform: scale(1.4);
-      }
-    }
+
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+}
+
 button {
   padding: 10px 20px;
   border: none;
@@ -162,7 +162,9 @@ button:active {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
+
 /* popup section  */
+
 /* Add your styles here */
 .popup-container {
   position: fixed;
@@ -197,8 +199,10 @@ button:active {
 
 .comments-container {
   max-height: 200px;
+
   /* Set a maximum height for the comments container */
   overflow-y: auto;
+
   /* Enable vertical scrolling within the comments container */
 }
 

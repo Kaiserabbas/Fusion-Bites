@@ -1,6 +1,6 @@
 import getFoodItems from './getItems.js';
 import { updateLikes, saveLikes } from './likesFunctions.js';
-import { applyPopup } from './popup.js';
+import applyPopup from './popup.js';
 import updateListCounter from './listCounter.js';
 
 // Fetch data from the API and display the item list
