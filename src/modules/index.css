@@ -259,3 +259,103 @@ button:active {
 }
 
 /* popup section  */
+
+/* about section */
+#about {
+  padding: 10px 20px;
+  position: relative;
+  left: 25%;
+  max-width: 50%;
+  text-align: center;
+}
+#about h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+#about p {
+  margin-bottom: 1em;
+}
+
+#about a {
+  text-decoration: none;
+  color: #000;
+}
+
+#about a:hover {
+  color: #fff;
+}
+
+#about .button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#about .button:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* about section */
+
+/* contact section */
+
+#contact {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 2em;
+}
+
+#contact p {
+  margin-bottom: 1em;
+}
+
+#contact input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* contact section */
+hr {
+  margin: 50px 0 50px 0;
+position: relative;
+left: 25%;
+  width: 50%;
+}
