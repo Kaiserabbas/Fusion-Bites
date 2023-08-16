@@ -14,7 +14,6 @@
   "rules": {
     "no-restricted-globals": ["error", "event", "fdescribe", "fit"], 
     "no-use-before-define": "off",
-    "prefer-destructuring": ["error", {"object": true, "array": false}],
     "func-names": ["error", "never", { "generators": "always" }],
      "prefer-arrow-callback": "off",
     "arrow-parens": "off",
@@ -26,6 +25,7 @@
     "object-curly-newline": "off",
     "eol-last": "off",
      "radix": "off",
+     "react/jsx-one-expression-per-line": "off",
     "no-unused-expressions": "off",
     "no-const-assign": "off",
     "arrow-body-style": "off",

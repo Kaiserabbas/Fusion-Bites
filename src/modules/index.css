@@ -67,7 +67,7 @@ header {
   gap: 20px;
 }
 
-#nav-list {
+.nav-list {
   margin: 20px;
   display: flex;
   align-items: center;
@@ -77,8 +77,12 @@ header {
 .nav a {
   color: rgb(122, 122, 122);
   font-size: 0.8rem;
+  text-decoration: none;
 }
 
+.dropdown {
+  margin: 20px;
+}
 footer {
   padding: 0 20px;
   width: 100vw;

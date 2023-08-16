@@ -4,8 +4,11 @@ import updateListCounter from '../modules/listCounter.js';
 document.body.innerHTML = `
   <nav>
     <ul id="nav-list">
-      <li class="nav"><a href="#" id="nav-dishes">Dishes</a></li>
-      <!-- Other navigation items -->
+          <li><a class="dropdown-item" href="#" id="american">American</a></li>
+          <li>
+            <a class="dropdown-item" href="#" id="pakistani">Pakistani</a>
+          </li>
+          <li><a class="dropdown-item" href="#" id="mexican">Mexican</a></li>
     </ul>
   </nav>
 `;
@@ -16,5 +19,5 @@ test('updates the list counter with the provided count', () => {
   updateListCounter(5);
 
   // Assert that textContent was updated with the correct value
-  expect(document.getElementById('nav-dishes').textContent).toBe('(5) Dishes');
+  expect(document.getElementById('american').textContent).toBe('(5) American');
 });

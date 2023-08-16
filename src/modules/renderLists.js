@@ -1,7 +1,11 @@
 import getFoodItems from './getItems.js';
 import { updateLikes, saveLikes } from './likesFunctions.js';
 import applyPopup from './popup.js';
-import updateListCounter from './listCounter.js';
+import {
+  updateListCounterAmerican,
+  updateListCounterPakistani,
+  updateListCounterMexican,
+} from './listCounter.js';
 
 // Fetch data from the API and display the item list
 getFoodItems()
@@ -63,7 +67,9 @@ const renderItemList = async (items) => {
       }
     });
     // Update the list counter
-    updateListCounter(items.length);
+    updateListCounterAmerican(items.length);
+    updateListCounterPakistani(items.length);
+    updateListCounterMexican(items.length);
     updateLikes(likeCountElement, item.idMeal);
   });
 };
